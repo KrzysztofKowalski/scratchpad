@@ -43,7 +43,7 @@ public class AppTest {
     @Test
     public void eulerDivide() {
         App x = new App();
-        int i = x.multiplesEuler(10);
+        long i = x.multiplesEuler(10);
         assertEquals(23, i);
     }
 
