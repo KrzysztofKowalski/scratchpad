@@ -37,9 +37,14 @@ public class AppTest {
         App x = new App();
         int[] arr = {3, 44, 231, 1, 5454, 999};
         x.bubbleSort(arr);
-
         assertEquals(1, arr[0]);
+    }
 
+    @Test
+    public void eulerDivide() {
+        App x = new App();
+        int i = x.multiplesEuler(10);
+        assertEquals(23, i);
     }
 
 }

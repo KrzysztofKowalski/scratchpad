@@ -1,9 +1,11 @@
 package example;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.Range;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.IntStream;
 
 public class App {
     public String inString = "aaaaddwwwcrrryu";
@@ -65,6 +67,22 @@ public class App {
     }
 
     public static void main(String[] args) {
+    }
+
+    /*
+
+
+If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.
+
+     */
+    int multiplesEuler(int maxNumber) {
+        IntStream range = IntStream.range(0, maxNumber);
+
+        IntStream filtered = range.parallel().filter(p -> p % 5 == 0 || p % 3 == 0);
+        int sum = filtered.sum();
+        return sum;
     }
 
 }

@@ -28,8 +28,7 @@ import java.util.stream.Stream;
  * <p>
  * N is an integer within the range [1..100,000];
  * each element of array A is an integer within the range [−1,000,000..1,000,000].
- * <p>
- * Copyright 2009–2021 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.
+
  */
 class Solution {
     public int solution(int[] intArray) {
